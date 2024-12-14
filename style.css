@@ -1,0 +1,198 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000500;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+    color: white;
+    background: #472836;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 5px rgb(209 207 207 / 69%);
+}
+
+
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #555;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.score-section {
+    margin-bottom: 2rem;
+}
+
+.score-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.score-btn {
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.score-btn:hover {
+    background: #0056b3;
+}
+
+.score-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.leaderboard-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.leaderboard-section th, .leaderboard-section td {
+    border: 0.5px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.leaderboard-section th {
+    background-color: black;
+    color: #fff;
+}
+
+.leaderboard-section tr:nth-child(even) {
+    background-color: #3b1d2b;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10rem;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .score-buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .score-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .score-display {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leaderboard-section table {
+        font-size: 0.9rem;
+    }
+
+    .leaderboard-section th, .leaderboard-section td {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.8rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .score-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 0.8rem;
+    }
+
+    .leaderboard-section table {
+        font-size: 0.8rem;
+    }
+}
