@@ -13,7 +13,7 @@ This web application was built using HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-You can check out the live demo of the app here: [Live Demo Link](https://snookerlb.netlify.app/)
+You can check out the live demo of the app here: [SnookerLB](https://snookerlb.netlify.app/)
 
 ## How to Use
 
